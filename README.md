@@ -80,9 +80,17 @@ WebRecon Pro is an advanced Open Source Intelligence (OSINT) web reconnaissance 
 - Python 3.6 or higher
 - pip (Python package manager)
 
-### Quick Installation (Manual installation)
+### Quick Manual installation
 
-- Follow the link below, copy and install the tool's script using nano
+**Visit the link below to get the script, then use nano to install it**
+
+**Step-by-Step**:
+
+- Open the link below to access the script
+- Copy the script content
+- Use nano to create and install the tool
+
+      https://gist.github.com/techenthusiast167/b7a611b73ecb6fa22d24c142485bc540
 
 
 # Manual Dependency Installation
