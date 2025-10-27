@@ -114,12 +114,19 @@ WebRecon Pro is an advanced Open Source Intelligence (OSINT) web reconnaissance 
 
   url	Target URL for reconnaissance	Required
 --max-pages	Maximum pages to crawl	100
+
 --max-depth	Maximum crawl depth	2
+
 --output	Custom output file path	Auto-generated
+
 --proxy	HTTP/SOCKS proxy URL	None
+
 --no-dns	Disable DNS reconnaissance	Enabled
+
 --no-whois	Disable WHOIS lookup	Enabled
+
 --no-wayback	Disable Wayback Machine	Enabled
+
 --no-builtwith	Disable BuiltWith analysis	Enabled
 
 
