@@ -88,10 +88,6 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 - Copy the script content
 - Use nano to create and install the tool
 
-**https://gist.github.com/techenthusiast167/e9e1c4e5c9836ac7600f26953e180c0e -v2**
-
-**https://gist.github.com/techenthusiast167/b7a611b73ecb6fa22d24c142485bc540 - v1**
-
 
 # Manual Dependency Installation
 
