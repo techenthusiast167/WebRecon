@@ -105,13 +105,13 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 
     python3 webrecon.py https://example.com --max-pages 50 --max-depth 3
 
-# With proxy and custom output
+# With proxy
 
-    python3 webrecon.py https://example.com --proxy socks5://127.0.0.1:9050 --output results.json
+    python3 webrecon.py https://example.com --proxy socks5://127.0.0.1:9050 
 
 # Minimal reconnaissance (crawling only)
 
-    python3 webrecon.py https://example.com --no-dns --no-whois --no-wayback --no-builtwith
+    python3 webrecon.py https://example.com --no-dns --no-whois --no-wayback --no-builtwith --no-dnsdumpster
 
 
 # Command Line Arguments
@@ -158,7 +158,7 @@ Corporate Security Assessment
 
 ### Technology stack analysis only
 
-    python3 webrecon.py https://competitor.com --no-dns --no-whois --output tech_report.json
+    python3 webrecon.py https://competitor.com --no-dns --no-whois
 
 # Academic Research
 
