@@ -1,5 +1,6 @@
 # WebRecon
-WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool designed for cybersecurity professionals, penetration testers, and security researchers. It automates the process of gathering intelligence from target websites through comprehensive crawling, data extraction, and analysis.
+
+**WebRecon** is an advanced Open Source Intelligence (OSINT) web reconnaissance tool designed for cybersecurity professionals, penetration testers, and security researchers. It automates the process of gathering intelligence from target websites through comprehensive crawling, data extraction, and analysis.
 
 
 **Advanced OSINT Web Reconnaissance Tool**
@@ -106,13 +107,18 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 
 ### Quick Manual installation
 
-**Visit the link below to get the script, then use nano to install it**
+**Visit the links below to get the script, then use nano to install it**
+
+##### V5 is out: 
+**https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e**
+
+##### V4: 
 
 **https://gist.github.com/techenthusiast167/731d47e97143f15e6fafb4e260cf0587**
 
 **Step-by-Step**:
 
-- Click on the link below to access the script
+- Click on your preferred version of the link above to access the tool’s script
   
 - Copy the script content
   
@@ -231,8 +237,6 @@ Corporate Security Assessment
 # Report Location
 
 - **Default: webrecon_output/webrecon_domain_timestamp.json**
-
-- **Custom: User-specified path with --output flag**
 
 # Use Cases
 
