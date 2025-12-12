@@ -109,10 +109,10 @@
 
 **Visit the links below to get the tool’s script, then use nano to install it**
 
-##### V5 is out: 
+##### v5 is out: 
 **https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e**
 
-##### V4: 
+##### v4: 
 
 **https://gist.github.com/techenthusiast167/731d47e97143f15e6fafb4e260cf0587**
 
