@@ -28,54 +28,80 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 
 ### Core Capabilities
 
-- **Advanced Web Crawling** - Configurable depth and page limits
-- **Email Harvesting** - Intelligent email extraction with false positive filtering
-- **Social Media Discovery** - Automated profile detection across platforms
-- **Technology Stack Detection** - Comprehensive technology fingerprinting
-- **DNS Intelligence** - DNS record enumeration and analysis
-- **WHOIS Lookup** - Domain registration information gathering
-- **Historical Analysis** - Wayback Machine integration
+- **Advanced Web Crawling**: Configurable depth and page limits
+  
+- **Email Harvesting**: Intelligent email extraction with false positive filtering
+  
+- **Image Extraction**: Automated image downloading with intelligent filtering
+  
+- **Social Media Discovery**: Automated profile detection across platforms
+  
+- **Technology Stack Detection**: Comprehensive technology fingerprinting
+ 
+- **DNS Intelligence**: DNS record enumeration and analysis
+  
+- **WHOIS Lookup**: Domain registration information gathering
+  
+- **Historical Analysis**: Wayback Machine integration
 
 ### Data Extraction
 
-- **Cloud Storage Discovery** - AWS S3, Azure Blob, GCP Storage detection
-- **File Enumeration** - PDF, documents, configuration files, and more
-- **Marketing Tags** - Google Analytics, Facebook Pixel, Hotjar detection
-- **IP Address Discovery** - Public IP extraction from content
-- **HTML Comments** - Hidden comment analysis
-- **JavaScript Analysis** - JS source mapping and analysis
+- **Cloud Storage Discovery**: AWS S3, Azure Blob, GCP Storage detection
+  
+- **File Enumeration**: PDF, documents, configuration files, and more
+  
+- **Marketing Tags**: Google Analytics, Facebook Pixel, Hotjar detection
+  
+- **IP Address Discovery**: Public IP extraction from content
+  
+- **HTML Comments**: Hidden comment analysis
+  
+- **JavaScript Analysis**: JS source mapping and analysis
 
 ### Advanced Features
 
-- **Proxy Support** - HTTP/SOCKS proxy integration
+- **Proxy Support**: HTTP/SOCKS proxy integration
+  
 - **Automated Browser Integration** - BuiltWith, Wayback Machine auto-launch
-- **PDF Search Automation** - Google Dork integration for document discovery
-- **JSON Reporting** - Comprehensive structured output
-- **Custom Configuration** - Flexible scanning parameters
+  
+- **PDF Search Automation**: Google Dork integration for document discovery
+  
+- **JSON Reporting**: Comprehensive structured output
+  
+- **Custom Configuration**: Flexible scanning parameters
 
 ## Importance in Cybersecurity & OSINT
 
 ### Cybersecurity Applications
 
-- **Attack Surface Mapping** - Identify all exposed assets and endpoints
-- **Vulnerability Assessment** - Discover sensitive files and information leaks
-- **Threat Intelligence** - Gather intelligence on target infrastructure
-- **Penetration Testing** - Pre-engagement reconnaissance and intelligence gathering
-- **Incident Response** - Investigate compromised assets and exposed data
+- **Attack Surface Mapping**: Identify all exposed assets and endpoints
+  
+- **Vulnerability Assessment**: Discover sensitive files and information leaks
+ 
+- **Threat Intelligence**: Gather intelligence on target infrastructure
+  
+- **Penetration Testing**: Pre-engagement reconnaissance and intelligence gathering
+  
+- **Incident Response**: Investigate compromised assets and exposed data
 
 ### OSINT Intelligence Value
 
-- **Digital Footprint Analysis** - Map organizational online presence
-- **Brand Protection** - Monitor unauthorized use of company assets
-- **Competitive Intelligence** - Analyze competitor technology stacks
-- **Due Diligence** - Investigate business partners and acquisitions
-- **Security Research** - Academic and professional security analysis
+- **Digital Footprint Analysis**: Map organizational online presence
+ 
+- **Brand Protection**: Monitor unauthorized use of company assets
+  
+- **Competitive Intelligence**: Analyze competitor technology stacks
+  
+- **Due Diligence**: Investigate business partners and acquisitions
+  
+- **Security Research**: Academic and professional security analysis
 
 ## Installation
 
 ### Prerequisites
 
 - Python 3.6 or higher
+ 
 - pip (Python package manager)
 
 ### Quick Manual installation
@@ -87,7 +113,9 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 **Step-by-Step**:
 
 - Click on the link below to access the script
+  
 - Copy the script content
+  
 - Use nano to create and install the tool
 
 
@@ -95,28 +123,33 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 
     pip install requests beautifulsoup4 colorama tldextract python-whois dnspython lxml
 
-# Basic Usage
+# Basic Usage With Image Extraction
 
     python3 webrecon.py https://example.com
 
+# Without Image Extraction
+
+    python3 webrecon.py https://target.com --no-images
+
+
 # Advanced Options
 
-### Custom crawl limits
+##### Custom crawl limits
 
     python3 webrecon.py https://example.com --max-pages 50 --max-depth 3
 
-# With proxy
+##### With proxy
 
     python3 webrecon.py https://example.com --proxy socks5://127.0.0.1:9050 
 
-# Minimal reconnaissance (crawling only)
+##### Minimal reconnaissance (crawling only)
 
     python3 webrecon.py https://example.com --no-dns --no-whois --no-wayback --no-builtwith --no-dnsdumpster
 
 
 # Command Line Arguments
 
-### Argument	Description	Default
+##### Argument	Description	Default
 
   url	Target URL for reconnaissance	Required
 --max-pages	Maximum pages to crawl	100
@@ -141,7 +174,7 @@ WebRecon is an advanced Open Source Intelligence (OSINT) web reconnaissance tool
 Corporate Security Assessment
 
 
-# Comprehensive corporate reconnaissance
+##### Comprehensive corporate reconnaissance
 
     python3 webrecon.py https://target-company.com --max-pages 200 --max-depth 3
 
@@ -149,26 +182,26 @@ Corporate Security Assessment
 # Penetration Testing Engagement
 
 
-### Stealth reconnaissance with Tor
+##### Stealth reconnaissance with Tor
 
     python3 webrecon.py https://target.com --proxy socks5://127.0.0.1:9050 --max-pages 50
 
 # Competitive Intelligence
 
 
-### Technology stack analysis only
+##### Technology stack analysis only
 
     python3 webrecon.py https://competitor.com --no-dns --no-whois
 
 # Academic Research
 
-### Large-scale data collection
+##### Large-scale data collection
 
     python3 webrecon.py https://research-target.edu --max-pages 500 --max-depth 4
 
 # Output & Reports
 
-### JSON Report Structure
+##### JSON Report Structure
 
 
 {
