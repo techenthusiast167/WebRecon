@@ -107,7 +107,7 @@
 
 ### Quick Manual installation
 
-**Visit the links below to get the script, then use nano to install it**
+**Visit the links below to get the tool’s script, then use nano to install it**
 
 ##### V5 is out: 
 **https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e**
