@@ -105,16 +105,44 @@
  
 - pip (Python package manager)
 
-### Quick Manual installation
+### Installation Instructions
 
-**Visit the links below to get the tool’s script, then use nano to install it**
+**Option 1**:
 
-##### v5 is out: 
-**https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e**
+Below are updated, direct instructions for installing WebRecon v5.0. The same steps apply if you want to install v4.0 by simply swapping the link.
 
-##### v4: 
+**Step 1**: Download the Script
 
-**https://gist.github.com/techenthusiast167/731d47e97143f15e6fafb4e260cf0587**
+→ Visit the WebRecon v5.0 script page: https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
+
+→ Click the Raw button at the top-right of the script window. This will show just the code text.
+
+→ Copy the URL from your browser's address bar while you are on the "Raw" page (it should look like: https://gist.githubusercontent.com/.../raw/...)
+
+**Step 2**: Install Using Nano
+
+→ Open your terminal and run the following commands:
+
+**Step 1**: Download the script directly using wget with the 'Raw' link
+
+→ **wget -O WebRecon.py** [paste_the_raw_url_here]
+
+**Step 2**: Open the script in nano for verification
+
+→ **nano WebRecon.py**
+
+(Optional) **Step 3**: Make the script executable
+
+→ **chmod +x WebRecon.py**
+
+
+**OPtion 2**:
+
+→ Visit the links below to get the tool’s script, then use nano to install it.
+
+→ v5: https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
+
+→ v4: https://gist.github.com/techenthusiast167/731d47e97143f15e6fafb4e260cf0587
 
 **Step-by-Step**:
 
@@ -125,7 +153,7 @@
 - Use nano to create and install the tool
 
 
-# Manual Dependency Installation
+# Dependencies Installation
 
     pip install requests beautifulsoup4 colorama tldextract python-whois dnspython lxml
 
