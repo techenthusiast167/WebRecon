@@ -113,8 +113,7 @@ Below are updated, direct instructions for installing WebRecon v5.0. The same st
 
 **Step 1**: Download the Script
  
-→ Visit the **WebRecon v6.0** script page: https://gist.github.com/techenthusiast167/f7f26b289586fac2a5b6007d26693880 OR v5.0
-https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
+→ Visit the **WebRecon v6.0** script page: https://gist.github.com/techenthusiast167/f7f26b289586fac2a5b6007d26693880 
 
 → Click the Raw button at the top-right of the script window. This will show just the code text.
 
