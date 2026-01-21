@@ -112,8 +112,9 @@
 Below are updated, direct instructions for installing WebRecon v5.0. The same steps apply if you want to install v4.0 by simply swapping the link.
 
 **Step 1**: Download the Script
-
-→ Visit the WebRecon v5.0 script page: https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
+ 
+→ Visit the **WebRecon v6.0** script page: https://gist.github.com/techenthusiast167/f7f26b289586fac2a5b6007d26693880 OR v5.0
+https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
 
 → Click the Raw button at the top-right of the script window. This will show just the code text.
 
@@ -154,8 +155,8 @@ Below are updated, direct instructions for installing WebRecon v5.0. The same st
 
 
 # Dependencies Installation
-
-    pip install requests beautifulsoup4 colorama tldextract python-whois dnspython lxml
+  
+    pip install requests beautifulsoup4 colorama tabulate tldextract dnspython python-whois pillow pysocks lxml html5lib
 
 # Basic Usage With Image Extraction
 
