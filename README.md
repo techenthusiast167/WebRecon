@@ -1,373 +1,630 @@
-# WebRecon
+# WebRecon Pro v7.0
 
-**WebRecon** is an advanced Open Source Intelligence (OSINT) web reconnaissance tool designed for cybersecurity professionals, penetration testers, and security researchers. It automates the process of gathering intelligence from target websites through comprehensive crawling, data extraction, and analysis.
+**Advanced OSINT Web Reconnaissance Tool with Relationship Graph Visualization**
+
+![WebRecon Pro](https://img.shields.io/badge/WebRecon-Pro_v7.0-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![OSINT](https://img.shields.io/badge/OSINT-Advanced-red)
+![Graph](https://img.shields.io/badge/Relationship-Graphs-purple)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Reconnaissance-orange)
+
+## Overview
+
+**WebRecon Pro v6.0** is an advanced Open Source Intelligence (OSINT) web reconnaissance tool designed for cybersecurity professionals, penetration testers, and security researchers. This major update introduces comprehensive relationship graph visualization, tabular reporting, enhanced image downloading, and sophisticated data correlation capabilities.
+
+Unlike traditional reconnaissance tools, WebRecon Pro v6.0 focuses on understanding the **relationships between discovered entities** - emails, social media profiles, technologies, domains, and people - creating an interactive visual map of organizational digital footprints.
 
 
-**Advanced OSINT Web Reconnaissance Tool**
+## What's New in v7.0
 
-![WebRecon Pro Banner](https://img.shields.io/badge/WebRecon-Pro-brightgreen)
-![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
-![OSINT](https://img.shields.io/badge/OSINT-Tool-orange)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Reconnaissance-red)
+### Major Features Added
 
-## Table of Contents
+- **Relationship Graph Visualization** - Interactive network graphs showing connections between entities
+- **Comprehensive Tabular Reporting** - Structured data tables with source tracking
+- **Enhanced Image Intelligence** - Smart image downloading with metadata extraction
+- **Data Correlation Engine** - Intelligent relationship discovery between findings
+- **Multi-format Export** - JSON, HTML, CSV, and interactive visualizations
 
-- Overview
-- Key Features
-- Importance in Cybersecurity & OSINT
-- Installation
-- Usage
-- Advanced Usage Examples
-- Output & Reports
-- Use Cases
-- Legal & Ethical Considerations
-- Contributing
-- Disclaimer
 
+### Enhanced Capabilities
+
+- **Advanced False Positive Filtering** - Improved email and image pattern detection
+- **Source Tracking** - Every finding traced back to its source URL
+- **Interactive HTML Reports** - Browser-based exploration of findings
+- **Network Analysis Metrics** - Centrality, clustering, and relationship strength calculations
+- **Professional Output** - Enterprise-ready reports and visualizations
+  
 
 ## Key Features
 
-### Core Capabilities
+### **Intelligent Web Crawling**
 
-- **Advanced Web Crawling**: Configurable depth and page limits
+- Configurable depth and breadth crawling (1-5 levels)
+- Robots.txt and sitemap.xml parsing
+- JavaScript source extraction
+- Login page detection
+- Cloud storage discovery (AWS S3, Azure, GCP)
   
-- **Email Harvesting**: Intelligent email extraction with false positive filtering
-  
-- **Image Extraction**: Automated image downloading with intelligent filtering
-  
-- **Social Media Discovery**: Automated profile detection across platforms
-  
-- **Technology Stack Detection**: Comprehensive technology fingerprinting
- 
-- **DNS Intelligence**: DNS record enumeration and analysis
-  
-- **WHOIS Lookup**: Domain registration information gathering
-  
-- **Historical Analysis**: Wayback Machine integration
 
-### Data Extraction
+### **Advanced Email Harvesting**
 
-- **Cloud Storage Discovery**: AWS S3, Azure Blob, GCP Storage detection
+- Intelligent pattern matching with false positive filtering
+- Domain-based email grouping
+- Source URL tracking for each email
+- Image filename exclusion (logo@2x.png, etc.)
+- Corporate vs personal email classification
   
-- **File Enumeration**: PDF, documents, configuration files, and more
-  
-- **Marketing Tags**: Google Analytics, Facebook Pixel, Hotjar detection
-  
-- **IP Address Discovery**: Public IP extraction from content
-  
-- **HTML Comments**: Hidden comment analysis
-  
-- **JavaScript Analysis**: JS source mapping and analysis
 
-### Advanced Features
+### **Social Media Intelligence**
 
-- **Proxy Support**: HTTP/SOCKS proxy integration
-  
-- **Automated Browser Integration** - BuiltWith, Wayback Machine auto-launch
-  
-- **PDF Search Automation**: Google Dork integration for document discovery
-  
-- **JSON Reporting**: Comprehensive structured output
-  
-- **Custom Configuration**: Flexible scanning parameters
+- Platform-specific pattern matching (LinkedIn, Twitter, Facebook, etc.)
+- Username extraction and correlation
+- Profile validation to avoid share buttons and widgets
+- Organizational vs personal profile detection
 
-## Importance in Cybersecurity & OSINT
+### **Image Intelligence Suite**
 
-### Cybersecurity Applications
+- **Smart Image Downloading** - Filters placeholders and icons
+- **Metadata Extraction** - EXIF data, dimensions, file types
+- **Thumbnail Generation** - Automatic resizing for analysis
+- **HTML Gallery Creation** - Visual browsing of collected images
+- **Size Filtering** - Configurable minimum/maximum file sizes
 
-- **Attack Surface Mapping**: Identify all exposed assets and endpoints
-  
-- **Vulnerability Assessment**: Discover sensitive files and information leaks
- 
-- **Threat Intelligence**: Gather intelligence on target infrastructure
-  
-- **Penetration Testing**: Pre-engagement reconnaissance and intelligence gathering
-  
-- **Incident Response**: Investigate compromised assets and exposed data
+### **Technology Stack Detection**
 
-### OSINT Intelligence Value
+- 50+ technology patterns (CMS, frameworks, servers, analytics)
+- Header and content-based detection
+- Marketing tag identification (GA, GTM, Facebook Pixel)
+- CDN and hosting provider detection
 
-- **Digital Footprint Analysis**: Map organizational online presence
- 
-- **Brand Protection**: Monitor unauthorized use of company assets
-  
-- **Competitive Intelligence**: Analyze competitor technology stacks
-  
-- **Due Diligence**: Investigate business partners and acquisitions
-  
-- **Security Research**: Academic and professional security analysis
+### **DNS & Network Intelligence**
+
+- Comprehensive DNS record enumeration (A, MX, TXT, NS, CNAME)
+- Domain IP resolution and reverse DNS lookup
+- Subdomain discovery from crawled content
+- Automated DNSDumpster browser integration
+
+### **Document & File Discovery**
+
+- File type detection (PDF, DOC, XLS, PPT, CSV, etc.)
+- Configuration file discovery (.config, .conf, .ini)
+- Log file identification (.log)
+- Database file detection (.sql)
+
+### **Relationship Graph System** 
+
+- **Interactive Network Visualization** - Drag, zoom, explore relationships
+- **Entity Categorization** - Automatic classification of nodes
+- **Intelligent Relationship Discovery** - Same-domain emails, shared usernames, etc.
+- **Network Metrics** - Centrality, density, clustering coefficients
+- **Export Formats** - HTML interactive, JSON data, analysis reports
+
+### **Comprehensive Reporting** 
+
+- **Tabular Data Presentation** - Organized category-based tables
+- **Source Tracking** - Every finding linked to its discovery URL
+- **Multi-format Export** - JSON, HTML, CSV, Text
+- **Executive Summaries** - High-level overviews with statistics
+- **Detailed Findings** - Complete data with context and sources
+
+
+
+## Relationship Graph Visualization 
+
+### Graph Features
+
+- **Interactive HTML Graphs** - Drag nodes, zoom, hover for details
+- **Entity Categories** - Color-coded nodes (emails, domains, social, tech, etc.)
+- **Intelligent Layout** - Force-directed graph algorithms
+- **Relationship Types** - Different line styles for different connections
+- **Network Analysis** - Metrics and insights about the discovered network
+
+### Node Categories & Colors
+
+- 🔵 **Domains** - Target and related domains
+- 🔴 **Emails** - Discovered email addresses
+- 🟢 **Social Media** - Profiles and accounts
+- 🟡 **IP Addresses** - Network infrastructure
+- 🟣 **People/Organizations** - WHOIS and contact info
+- 🟠 **Documents/Files** - Discovered files
+- 🔶 **Technologies** - Detected tech stack
+- ⚫ **URLs** - Web pages and endpoints
+
+### Relationship Types
+
+- **Solid Blue Lines** - Direct domain relationships
+- **Red Lines** - Same email domain connections
+- **Purple Lines** - Same username across platforms
+- **Dashed Gray Lines** - Found-on-page relationships
+- **Green Dashed Lines** - Technology usage relationships
+
+### Graph Output Files
+```
+webrecon_output/graphs/
+├── relationship_graph_domain_timestamp.html  # Interactive graph
+├── graph_data_domain_timestamp.json          # Raw graph data
+└── graph_analysis_report.txt                 # Network metrics
+```
+
+## Output Structure
+
+### Default Output Directory
+```
+webrecon_output/
+├── comprehensive_report_TIMESTAMP.json       # Complete JSON data
+├── comprehensive_report_TIMESTAMP.html       # Interactive HTML report
+├── comprehensive_report_TIMESTAMP.txt        # Text summary
+├── images_DOMAIN_TIMESTAMP/                  # Downloaded images
+│   ├── raw/                                  # Original images
+│   ├── thumbnails/                           # Resized thumbnails
+│   ├── extracted/                            # Metadata and extracted data
+│   ├── gallery.html                          # Image gallery
+│   ├── metadata.json                         # Image metadata
+│   └── images_summary.csv                    # CSV summary
+├── graphs/                                   # Relationship graphs
+│   ├── relationship_graph_DOMAIN_TIMESTAMP.html
+│   ├── graph_data_DOMAIN_TIMESTAMP.json
+│   └── graph_analysis_report.txt
+└── webrecon_DOMAIN_TIMESTAMP.json            # Legacy JSON format
+```
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.6 or higher
+- Python 3.8 or higher
+- pip package manager
+- 500MB+ free disk space (for images and graphs)
+
+### Quick Installation
+
+**Option 1: Direct Download (Recommended)**
+
+
+# Download WebRecon Pro v6.0
+
+wget -O WebRecon.py ..
+
+# Make executable
+
+chmod +x WebRecon.py
+
+# Verify installation
+
+python3 WebRecon.py --help
+
+**Option 2: Manual Installation using Nano**
+
+
+# Install dependencies
+
+    pip install requests beautifulsoup4 colorama tabulate tldextract dnspython python-whois pillow networkx pyvis lxml html5lib
+
+# Core dependencies
+
+    pip install requests beautifulsoup4 colorama tabulate tldextrapillow
+
+# Network and DNS
+
+    pip install dnspython python-whois pysocks
+
+# Graph visualization (REQUIRED for v6.0 features)
+
+    pip install networkx pyvis
+
+# Optional but recommended
+
+    pip install lxml html5lib urllib3
+
+
+### Verification
+
+# Test installation
+
+    python3 WebRecon.py --help
+
+    
+
+# Expected output should show v6.0 features including:
+
+# --no-graphs              Disable relationship graph generation
+# --table-only             Display only tabular output
+# --detailed-tables        Show detailed tables for all categories
+
+
+## Usage Examples
+
+### Basic Usage
+
+# Comprehensive reconnaissance with all features
+
+    python3 WebRecon.py https://example.com
+
+
+# With custom output directory
+
+    python3 WebRecon.py https://example.com --output ./my_report.json
+
+# Limited crawling
+
+    python3 WebRecon.py https://example.com --max-pages 50 --max-depth 2
+
+
+### Advanced Reconnaissance
+
+# Enterprise reconnaissance with full graph visualization
  
-- pip (Python package manager)
+    python3 WebRecon.py https://target-company.com --max-pages 200 --max-depth 3
 
-### Installation Instructions
+# Stealth reconnaissance through Tor
 
-**Option 1**:
+    python3 WebRecon.py https://target.com --proxy socks5://127.0.0.1:9050
 
-Below are updated, direct instructions for installing WebRecon v5.0. The same steps apply if you want to install v4.0 by simply swapping the link.
+# Technology-focused reconnaissance
 
-**Step 1**: Download the Script
- 
-→ Visit the **WebRecon v6.0** script page: https://gist.github.com/techenthusiast167/f7f26b289586fac2a5b6007d26693880 
+    python3 WebRecon.py https://tech-company.com --no-images --no-dnsdumpster
 
-→ Click the Raw button at the top-right of the script window. This will show just the code text.
 
-→ Copy the URL from your browser's address bar while you are on the "Raw" page (it should look like: https://gist.githubusercontent.com/.../raw/...)
+### Feature Control
 
-**Step 2**: Install Using Nano
+# Disable specific modules
 
-→ Open your terminal and run the following commands:
+    python3 WebRecon.py https://example.com \
 
-**Step 1**: Download the script directly using wget with the 'Raw' link
+  --no-images \          # Disable image downloading
+  --no-graphs \          # Disable relationship graphs
+  --no-dns \            # Disable DNS reconnaissance
+  --no-whois \          # Disable WHOIS lookup
+  --no-wayback \        # Disable Wayback Machine
+  --no-builtwith \      # Disable BuiltWith analysis
+  --no-dnsdumpster      # Disable DNSDumpster
 
-→ **wget -O WebRecon.py** [paste_the_raw_url_here]
+# Table-only output mode
 
-**Step 2**: Open the script in nano for verification
+    python3 WebRecon.py https://example.com --table-only
 
-→ **nano WebRecon.py**
+# Detailed tabular output
 
-(Optional) **Step 3**: Make the script executable
+    python3 WebRecon.py https://example.com --detailed-tables
 
-→ **chmod +x WebRecon.py**
 
+### Output Customization
 
-**OPtion 2**:
+# Custom proxy configuration
 
-→ Visit the links below to get the tool’s script, then use nano to install it.
+    python3 WebRecon.py https://example.com --proxy http://proxy:8080
 
-→ v5: https://gist.github.com/techenthusiast167/354217ab4839a195a9f1caf7a227010e
+# Specific crawl limits
 
-→ v4: https://gist.github.com/techenthusiast167/731d47e97143f15e6fafb4e260cf0587
+    python3 WebRecon.py https://large-site.com --max-pages 500 --max-depth 4
 
-**Step-by-Step**:
+# Save to specific location
 
-- Click on your preferred version of the link above to access the tool’s script
-  
-- Copy the script content
-  
-- Use nano to create and install the tool
+    python3 WebRecon.py https://example.com --output /path/to/report.json
 
 
-# Dependencies Installation
-  
-    pip install requests beautifulsoup4 colorama tabulate tldextract dnspython python-whois pillow pysocks lxml html5lib
+## Command Line Arguments
 
-# Basic Usage With Image Extraction
+### Basic Arguments
 
-    python3 webrecon.py https://example.com
+| Argument | Description | Default |
+|----------|-------------|---------|
+| `url` | Target URL for reconnaissance | **Required** |
+| `--max-pages` | Maximum pages to crawl | 100 |
+| `--max-depth` | Maximum crawl depth | 2 |
+| `--output` | Custom output file path | Auto-generated |
+| `--proxy` | HTTP/SOCKS proxy URL | None |
 
-# Without Image Extraction
+### Feature Control Arguments
 
-    python3 webrecon.py https://target.com --no-images
+| Argument | Description | Default |
+|----------|-------------|---------|
+| `--no-dns` | Disable DNS reconnaissance | Enabled |
+| `--no-whois` | Disable WHOIS lookup | Enabled |
+| `--no-wayback` | Disable Wayback Machine | Enabled |
+| `--no-builtwith` | Disable BuiltWith analysis | Enabled |
+| `--no-dnsdumpster` | Disable DNSDumpster domain IP analysis | Enabled |
+| `--no-images` | Disable image downloading | Enabled |
+| `--no-graphs` | Disable relationship graph generation | Enabled |
 
+### Output Control Arguments 
 
-# Advanced Options
+| Argument | Description | Default |
+|----------|-------------|---------|
+| `--table-only` | Display only tabular output (no JSON) | Disabled |
+| `--detailed-tables` | Show detailed tables for all categories | Disabled |
 
-##### Custom crawl limits
+## Using the Relationship Graphs
 
-    python3 webrecon.py https://example.com --max-pages 50 --max-depth 3
+### Accessing Graph Output
 
-##### With proxy
+After running WebRecon Pro, open the generated HTML graph file:
 
-    python3 webrecon.py https://example.com --proxy socks5://127.0.0.1:9050 
+# On Linux/Mac
 
-##### Minimal reconnaissance (crawling only)
+    xdg-open webrecon_output/graphs/relationship_graph_example_20240101_120000.html
 
-    python3 webrecon.py https://example.com --no-dns --no-whois --no-wayback --no-builtwith --no-dnsdumpster
+# Or simply navigate to the file in your file browser and open it
 
 
-# Command Line Arguments
+### Graph Navigation
 
-##### Argument	Description	Default
+1. **Zoom**: Mouse wheel or touchpad pinch
+2. **Pan**: Click and drag background
+3. **Node Interaction**:
+   - **Hover**: See detailed information
+   - **Click**: Highlight connections
+   - **Drag**: Reposition nodes
+4. **Controls** (top-right panel):
+   - **Fit View**: Auto-arrange graph
+   - **Toggle Physics**: Enable/disable node movement
+   - **Spring Length**: Adjust connection tension
+
+### Graph Legend (Draggable)
 
-  url	Target URL for reconnaissance	Required
---max-pages	Maximum pages to crawl	100
+- Located top-left, can be moved anywhere
+- Shows node color meanings
+- Shows relationship line meanings
+- Click `×` to hide/show
 
---max-depth	Maximum crawl depth	2
+### Interpreting the Graph
 
---output	Custom output file path	Auto-generated
+- **Node Size**: Larger nodes = more connections
+- **Node Color**: Indicates entity type (see legend)
+- **Line Thickness**: Thicker = stronger relationship
+- **Line Style**: Solid/dashed indicates relationship type
+- **Clusters**: Groups of tightly connected nodes
 
---proxy	HTTP/SOCKS proxy URL	None
+### Graph Analysis Report
 
---no-dns	Disable DNS reconnaissance	Enabled
+Check `graph_analysis_report.txt` for:
 
---no-whois	Disable WHOIS lookup	Enabled
+- Network density and clustering metrics
+- Most connected entities (hubs)
+- Key bridge entities (connectors)
+- Relationship clusters and patterns
+- Strategic insights and recommendations
 
---no-wayback	Disable Wayback Machine	Enabled
+## Sample Output
 
---no-builtwith	Disable BuiltWith analysis	Enabled
+### Console Output
 
+============================================================
+WEBRECON PRO - RECONNAISSANCE SUMMARY
+============================================================
+Crawled Links: 47
+Valid Emails Found: 8
+Subdomains Found: 3
+Social Media Links: 12
+Files Found: 15
+HTML Comments: 23
+JS Sources: 9
+Technologies Detected: 14
+Images Downloaded: 42
 
-# Advanced Usage Examples
+DOMAIN IP INFORMATION:
+  Primary IP: 192.0.2.1
+  Reverse DNS: server.example.com
 
-Corporate Security Assessment
+TECHNOLOGY SUMMARY:
+  Detected: WordPress, jQuery, Google Analytics, Cloudflare, PHP
 
+RELATIONSHIP GRAPH SUMMARY:
+  Total Entities: 127
+  Total Relationships: 89
+  Graph saved to: webrecon_output/graphs/
+  Open the HTML file in browser to explore relationships
 
-##### Comprehensive corporate reconnaissance
 
-    python3 webrecon.py https://target-company.com --max-pages 200 --max-depth 3
+### Tabular Output Example
 
+============================================================
+COMPREHENSIVE REPORT SUMMARY
+============================================================
 
-# Penetration Testing Engagement
+SUMMARY STATISTICS:
+┌──────────────────────┬────────────────┬────────┬─────────────────────────┐
+│ Category             │ Total Findings │ Types  │ Top Types               │
+├──────────────────────┼────────────────┼────────┼─────────────────────────┤
+│ EMAILS               │ 8              │ 1      │ email_address:8         │
+│ SOCIAL_MEDIA         │ 12             │ 6      │ linkedin:5, twitter:3   │
+│ TECHNOLOGIES         │ 14             │ 1      │ technology:14           │
+│ DNS                  │ 9              │ 4      │ a_records:4, mx_records:2│
+│ WHOIS                │ 7              │ 6      │ registrar:1, org:1      │
+│ OVERALL TOTALS       │ 127            │ 18     │ Sources: 47             │
+└──────────────────────┴────────────────┴────────┴─────────────────────────┘
 
 
-##### Stealth reconnaissance with Tor
+## Use Cases
 
-    python3 webrecon.py https://target.com --proxy socks5://127.0.0.1:9050 --max-pages 50
+### Enterprise Security Teams
 
-# Competitive Intelligence
+- **Attack Surface Management**: Continuous monitoring of digital assets
+- **Third-Party Risk Assessment**: Vendor and partner security evaluation
+- **M&A Due Diligence**: Pre-acquisition security assessment
+- **Brand Protection**: Monitoring unauthorized use of assets
 
+### Penetration Testers & Red Teams
 
-##### Technology stack analysis only
+- **Pre-engagement Reconnaissance**: Comprehensive target intelligence
+- **Attack Path Discovery**: Relationship mapping for privilege escalation
+- **Social Engineering Intelligence**: Employee and organizational mapping
+- **Password Spray Research**: Email domain and pattern analysis
 
-    python3 webrecon.py https://competitor.com --no-dns --no-whois
+### Cybersecurity Researchers
 
-# Academic Research
+- **Threat Actor Tracking**: Infrastructure and persona mapping
+- **Campaign Analysis**: Understanding attacker infrastructure relationships
+- **Vulnerability Research**: Technology stack analysis for exploit research
+- **Academic Studies**: Large-scale web intelligence research
 
-##### Large-scale data collection
+### Law Enforcement & Investigators
 
-    python3 webrecon.py https://research-target.edu --max-pages 500 --max-depth 4
+- **Digital Forensics**: Evidence collection and relationship mapping
+- **Cybercrime Investigations**: Tracking illicit infrastructure
+- **Person of Interest Profiling**: Digital footprint analysis
+- **Network Investigation**: Understanding complex organizational structures
 
-# Output & Reports
+### Corporate Intelligence
 
-##### JSON Report Structure
+- **Competitive Analysis**: Technology stack and online presence comparison
+- **Market Research**: Understanding industry digital footprints
+- **Executive Protection**: Monitoring exposed executive information
+- **Risk Intelligence**: Proactive threat identification
 
-
-{
-  "crawled_links": ["url1", "url2", ...],
-  "emails": ["email1@domain.com", "email2@domain.com", ...],
-  "social_media": {
-    "facebook": ["profile_urls"],
-    "twitter": ["profile_urls"],
-    ...
-  },
-  "technologies": {
-    "detected": ["WordPress", "jQuery", "Cloudflare", ...]
-  },
-  "dns_info": {
-    "a_records": ["IPs"],
-    "mx_records": ["mail_servers"],
-    ...
-  },
-  "whois_info": {
-    "registrar": "Registrar Name",
-    "creation_date": "2020-01-01",
-    ...
-  }
-}
-
-
-# Report Location
-
-- **Default: webrecon_output/webrecon_domain_timestamp.json**
-
-# Use Cases
-
-## Enterprise Security
-
-- **Attack Surface Management** - Continuous monitoring of digital assets
-
-- **Third-Party Risk Assessment** - Vendor security evaluation
-
-- **M&A Due Diligence** - Pre-acquisition security assessment
-
-
-# Government & Law Enforcement
-
-- **Cyber Crime Investigation** - Digital evidence gathering
-
-- **Threat Actor Profiling** - Adversary infrastructure mapping
-
-- **National Security** - Critical infrastructure protection
-
-
-
-# Legal & Ethical Considerations
-
+## Legal & Ethical Considerations
 
 ### Permitted Usage
 
-- Security research on systems you own
-
-- Authorized penetration testing
-
-- Academic research with proper consent
-
+- Security testing on systems you own or have written authorization to test
+- Educational and academic research with proper oversight
 - Corporate security assessments on owned assets
-
 - Bug bounty programs with explicit permission
+- Law enforcement investigations with proper legal authority
 
+### Prohibited Usage
 
-# Prohibited Usage
-
-- Unauthorized scanning of systems
-
-- Privacy violation or harassment
-
+- Unauthorized scanning of systems you don't own
+- Privacy violation or harassment of individuals
 - Commercial exploitation without permission
-
-- Any illegal activities
-
 - Network disruption or denial of service
+- Any activities violating applicable laws
+
+### Compliance Requirements
+
+1. **Always obtain proper authorization** before scanning
+2. **Respect robots.txt** and terms of service
+3. **Follow responsible disclosure** practices
+4. **Comply with local laws** and regulations (GDPR, CFAA, etc.)
+5. **Use rate limiting** to avoid overwhelming target systems
+6. **Store collected data securely** and delete when no longer needed
+
+## Security & Privacy Features
+
+### Built-in Protections
+
+- **Rate Limiting**: Configurable delays between requests
+- **User-Agent Rotation**: Standard browser user agents
+- **Error Handling**: Graceful failure without crashing
+- **Memory Management**: Efficient processing of large datasets
+- **Data Anonymization**: Option to anonymize reports
+
+### Privacy Considerations
+
+- **Local Processing**: All analysis happens on your machine
+- **No Data Sharing**: No telemetry or external calls (except target)
+- **Configurable Retention**: Automatic cleanup of temporary files
+- **Selective Collection**: Disable modules that collect sensitive data
+
+## Troubleshooting
+
+### Common Issues & Solutions
+
+**Issue**: `ModuleNotFoundError` for networkx or pyvis
+**Solution**: Install graph dependencies: `pip install networkx pyvis`
+
+**Issue**: SSL certificate verification errors
+**Solution**: Tool automatically handles SSL issues, but ensure system certs are updated
+
+**Issue**: DNS resolution failures
+**Solution**: Check network connectivity or use `--no-dns` flag
+
+**Issue**: Graph not generating
+**Solution**: Ensure minimum 2 findings exist and graph libraries are installed
+
+**Issue**: Image downloading blocked
+**Solution**: Some sites block image scraping; use `--no-images` flag
+
+### Performance Tips
+
+1. **Limit crawl depth** for faster reconnaissance
+2. **Use `--no-images`** to significantly speed up scans
+3. **Increase timeouts** for slow sites: Modify config.py
+4. **Use proxy** for distributed or slower scanning
+5. **Monitor memory usage** for very large sites
 
 
-# Compliance Notes
+### Community Contributions
 
-- Always obtain proper authorization before scanning
-
-- Respect robots.txt and terms of service
-
-- Follow responsible disclosure practices
-
-- Comply with local laws and regulations
+- Submit bug reports and feature requests via GitHub Issues
+- Share your graph analysis techniques
+- Develop specialized detection modules
+- Contribute to false positive pattern databases
 
 
-# Contributing
+## Contributing
 
-Contributions from the security community!
+I welcome contributions from the security community!
 
+### How to Contribute
 
-# How to Contribute
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/AmazingFeature`
+3. **Commit your changes**: `git commit -m 'Add some AmazingFeature'`
+4. **Push to the branch**: `git push origin feature/AmazingFeature`
+5. **Open a Pull Request**
 
-- Fork the repository
+### Contribution Areas
 
-- Create a feature branch (git checkout -b feature/AmazingFeature)
+- **Detection Patterns**: New technology or platform patterns
+- **False Positive Filters**: Improved filtering algorithms
+- **Graph Algorithms**: Better relationship detection
+- **Output Formats**: Additional report formats
+- **Performance**: Speed and memory optimizations
 
-- Commit your changes (git commit -m 'Add some AmazingFeature')
+## Disclaimer
 
-- Push to the branch (git push origin feature/AmazingFeature)
+**WebRecon Pro is designed for legitimate security research and authorized testing only.**
 
-- Open a Pull Request
+LEGAL DISCLAIMER:
 
+1. The authors are not responsible for misuse of this tool
+2. Users must ensure they have proper authorization before scanning
+3. This tool should only be used in accordance with applicable laws
+4. Educational purposes only - use at your own risk
+5. Always respect privacy and comply with data protection regulations
 
+By using this tool, you agree to:
 
-
-
-# Disclaimer
-
-
-**WebRecon is designed for legitimate security research and authorized testing only**
-
-- The author is not responsible for misuse of this tool
-
-- Users must ensure they have proper authorization before scanning
-
-- This tool should only be used in accordance with applicable laws
-
-- Educational purposes only - use at your own risk
-
-
-
-
-
-
-**Made with ❤️ for the security community**
-
-**Remember**: With great power comes great responsibility. Always use this tool ethically.
+- Use it only for authorized security testing
+- Respect all applicable laws and regulations
+- Not use it for malicious purposes
+- Accept full responsibility for your actions
 
 
+### Reporting Issues
+
+When reporting issues, please include:
+
+1. Command used and target URL (or similar test case)
+2. Error messages or unexpected behavior
+3. Your environment (OS, Python version, installed packages)
+4. Steps to reproduce the issue
+
+## Educational Value
+
+WebRecon Pro v7.0 is not just a tool but an educational platform for understanding:
+
+1. **Web Infrastructure Mapping**: How modern websites are structured
+2. **Digital Footprint Analysis**: What organizations expose online
+3. **Relationship Analysis**: How entities connect in the digital world
+4. **Data Correlation**: Finding meaningful patterns in large datasets
+5. **Visual Intelligence**: Presenting complex data in understandable ways
+
+## Version History
+
+- **v7-6.0** (Current): Relationship graphs, tabular reporting, enhanced intelligence
+- **v5.0**: Image downloading, comprehensive reporting, false positive filtering
+- **v4.0**: Modular architecture, proxy support, multi-format output
+- **v3.0**: Technology detection, social media intelligence, DNS integration
+- **v2.0**: Basic crawling, email harvesting, JSON reporting
+- **v1.0**: Initial release with core crawling capabilities
+
+---
+
+**Made with ❤️ for the security community by D4rk_Intel**
+
+**Remember**: With great power comes great responsibility. Always use this tool ethically, legally, and with proper authorization.
+
+---
+*Last Updated: January 2024 | Version: 6.0 | License: Educational Use Only*
