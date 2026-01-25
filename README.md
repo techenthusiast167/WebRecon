@@ -51,7 +51,7 @@ Unlike traditional reconnaissance tools, WebRecon Pro v6.0 focuses on understand
 - Intelligent pattern matching with false positive filtering
 - Domain-based email grouping
 - Source URL tracking for each email
-- Image filename exclusion (logo@2x.png, etc.)
+- Image filename exclusion
 - Corporate vs personal email classification
   
 
