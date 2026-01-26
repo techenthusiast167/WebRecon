@@ -1,8 +1,8 @@
-# WebRecon Pro v7.0
+# WebRecon Pro 
 
 **Advanced OSINT Web Reconnaissance Tool with Relationship Graph Visualization**
 
-![WebRecon Pro](https://img.shields.io/badge/WebRecon-Pro_v7.0-brightgreen)
+![WebRecon Pro](https://img.shields.io/badge/WebRecon-Pro-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![OSINT](https://img.shields.io/badge/OSINT-Advanced-red)
 ![Graph](https://img.shields.io/badge/Relationship-Graphs-purple)
@@ -237,7 +237,7 @@ webrecon_output/
 
 ### Quick Installation
 
-**Option 1: Direct Download using Wget**
+**Direct Download using Wget**
 
     wget -O WebRecon.py https://gist.githubusercontent.com/techenthusiast167/47c8f8c94a520c8d96a1495b7c9a1fcb/raw/42e8dacea162de67c8377682aea3907349aa6c9d/WebRecon.py
 
