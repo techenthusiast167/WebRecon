@@ -227,47 +227,47 @@ python3 WebRecon.py --help
 
 # Expected output should show v6.0 features including:
 
-# --no-graphs              Disable relationship graph generation
-# --table-only             Display only tabular output
-# --detailed-tables        Show detailed tables for all categories
+**--no-graphs              Disable relationship graph generation**
+**--table-only             Display only tabular output**
+**--detailed-tables        Show detailed tables for all categories**
 
 
-## Usage Examples
+# Usage Examples
 
-### Basic Usage
+## Basic Usage
 
-# Comprehensive reconnaissance with all features
+### Comprehensive reconnaissance with all features
 
     python3 WebRecon.py https://example.com
 
 
-# With custom output directory
+### With custom output directory
 
     python3 WebRecon.py https://example.com --output ./my_report.json
 
-# Limited crawling
+### Limited crawling
 
     python3 WebRecon.py https://example.com --max-pages 50 --max-depth 2
 
 
-### Advanced Reconnaissance
+## Advanced Reconnaissance
 
-# Enterprise reconnaissance with full graph visualization
+### Enterprise reconnaissance with full graph visualization
  
     python3 WebRecon.py https://target-company.com --max-pages 200 --max-depth 3
 
-# Stealth reconnaissance through Tor
+### Stealth reconnaissance through Tor
 
     python3 WebRecon.py https://target.com --proxy socks5://127.0.0.1:9050
 
-# Technology-focused reconnaissance
+### Technology-focused reconnaissance
 
     python3 WebRecon.py https://tech-company.com --no-images --no-dnsdumpster
 
 
-### Feature Control
+# Feature Control
 
-# Disable specific modules
+### Disable specific modules
 
     python3 WebRecon.py https://example.com \
 
@@ -279,31 +279,31 @@ python3 WebRecon.py --help
   --no-builtwith \      # Disable BuiltWith analysis
   --no-dnsdumpster      # Disable DNSDumpster
 
-# Table-only output mode
+### Table-only output mode
 
     python3 WebRecon.py https://example.com --table-only
 
-# Detailed tabular output
+### Detailed tabular output
 
     python3 WebRecon.py https://example.com --detailed-tables
 
 
-### Output Customization
+# Output Customization
 
-# Custom proxy configuration
+### Custom proxy configuration
 
     python3 WebRecon.py https://example.com --proxy http://proxy:8080
 
-# Specific crawl limits
+### Specific crawl limits
 
     python3 WebRecon.py https://large-site.com --max-pages 500 --max-depth 4
 
-# Save to specific location
+### Save to specific location
 
     python3 WebRecon.py https://example.com --output /path/to/report.json
 
 
-## Command Line Arguments
+# Command Line Arguments
 
 ### Basic Arguments
 
@@ -334,17 +334,17 @@ python3 WebRecon.py --help
 | `--table-only` | Display only tabular output (no JSON) | Disabled |
 | `--detailed-tables` | Show detailed tables for all categories | Disabled |
 
-## Using the Relationship Graphs
+# Using the Relationship Graphs
 
 ### Accessing Graph Output
 
 After running WebRecon Pro, open the generated HTML graph file:
 
-# On Linux/Mac
+### On Linux/Mac
 
     xdg-open webrecon_output/graphs/relationship_graph_example_20240101_120000.html
 
-# Or simply navigate to the file in your file browser and open it
+### Or simply navigate to the file in your file browser and open it
 
 
 ### Graph Navigation
@@ -385,57 +385,9 @@ Check `graph_analysis_report.txt` for:
 - Relationship clusters and patterns
 - Strategic insights and recommendations
 
-## Sample Output
-
-### Console Output
-
-============================================================
-WEBRECON PRO - RECONNAISSANCE SUMMARY
-============================================================
-Crawled Links: 47
-Valid Emails Found: 8
-Subdomains Found: 3
-Social Media Links: 12
-Files Found: 15
-HTML Comments: 23
-JS Sources: 9
-Technologies Detected: 14
-Images Downloaded: 42
-
-DOMAIN IP INFORMATION:
-  Primary IP: 192.0.2.1
-  Reverse DNS: server.example.com
-
-TECHNOLOGY SUMMARY:
-  Detected: WordPress, jQuery, Google Analytics, Cloudflare, PHP
-
-RELATIONSHIP GRAPH SUMMARY:
-  Total Entities: 127
-  Total Relationships: 89
-  Graph saved to: webrecon_output/graphs/
-  Open the HTML file in browser to explore relationships
 
 
-### Tabular Output Example
-
-============================================================
-COMPREHENSIVE REPORT SUMMARY
-============================================================
-
-SUMMARY STATISTICS:
-┌──────────────────────┬────────────────┬────────┬─────────────────────────┐
-│ Category             │ Total Findings │ Types  │ Top Types               │
-├──────────────────────┼────────────────┼────────┼─────────────────────────┤
-│ EMAILS               │ 8              │ 1      │ email_address:8         │
-│ SOCIAL_MEDIA         │ 12             │ 6      │ linkedin:5, twitter:3   │
-│ TECHNOLOGIES         │ 14             │ 1      │ technology:14           │
-│ DNS                  │ 9              │ 4      │ a_records:4, mx_records:2│
-│ WHOIS                │ 7              │ 6      │ registrar:1, org:1      │
-│ OVERALL TOTALS       │ 127            │ 18     │ Sources: 47             │
-└──────────────────────┴────────────────┴────────┴─────────────────────────┘
-
-
-## Use Cases
+# Use Cases
 
 ### Enterprise Security Teams
 
