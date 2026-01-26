@@ -183,7 +183,7 @@ webrecon_output/
 
 # Download WebRecon Pro v6.0
 
-wget -O WebRecon.py ..
+**wget -O WebRecon.py https://gist.githubusercontent.com/techenthusiast167/47c8f8c94a520c8d96a1495b7c9a1fcb/raw/42e8dacea162de67c8377682aea3907349aa6c9d/WebRecon.py**
 
 # Make executable
 
