@@ -265,7 +265,7 @@ webrecon_output/
 
     
 
-### Expected output should show v6.0 features including:
+### Expected output should show features including:
 
 **--no-graphs              Disable relationship graph generation**
 **--table-only             Display only tabular output**
@@ -394,11 +394,13 @@ After running WebRecon Pro, open the generated HTML graph file:
 2.  **Pan**: Click and drag background
    
 3. **Node Interaction**:
+   
    - **Hover**: See detailed information
    - **Click**: Highlight connections
    - **Drag**: Reposition nodes
      
-4. **Controls** (top-right panel):
+5. **Controls** (top-right panel):
+   
    - **Fit View**: Auto-arrange graph
    - **Toggle Physics**: Enable/disable node movement
    - **Spring Length**: Adjust connection tension
