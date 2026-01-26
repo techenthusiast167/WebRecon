@@ -579,4 +579,5 @@ WebRecon Pro v7.0 is not just a tool but an educational platform for understandi
 **Remember**: With great power comes great responsibility. Always use this tool ethically, legally, and with proper authorization.
 
 ---
-*Last Updated: January 2024 | Version: 6.0 | License: Educational Use Only*
+
+*Last Updated: January 2026 | Version: 6.0 | License: Educational Use Only*
