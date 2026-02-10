@@ -245,10 +245,6 @@ webrecon_output/
 
     chmod +x WebRecon.py
 
-# Verify Installation
-
-    python3 WebRecon.py --help
-
 
 # Install Dependencies
 
