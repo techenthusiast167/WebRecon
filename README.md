@@ -239,7 +239,7 @@ webrecon_output/
 
 **Direct Download using Wget**
 
-    wget -O WebRecon.py https://gist.githubusercontent.com/techenthusiast167/3f6c9b6fda89387dc05eb0cadd7a3d25/raw/bf8361bffdc248faa6172e3930148031ad198165/WebRecon.py
+    wget -O WebRecon.py https://gist.githubusercontent.com/techenthusiast167/dfdaff3b49df63a86e7860376288b7d3/raw/64ae31387c8e79cb39a7d0ace8f706a4cc6c06af/webrecon.py
 
 # Make Executable (Optional)
 
