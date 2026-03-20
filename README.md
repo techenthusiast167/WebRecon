@@ -197,9 +197,9 @@ Unlike traditional reconnaissance tools, WebRecon Pro focuses on understanding t
 
 ```
 webrecon_output/graphs/
-├── relationship_graph_domain_timestamp.html  # Interactive graph
-├── graph_data_domain_timestamp.json          # Raw graph data
-└── graph_analysis_report.txt                 # Network metrics
+├── relationship_graph_domain_timestamp.html  - Interactive graph
+├── graph_data_domain_timestamp.json          - Raw graph data
+└── graph_analysis_report.txt                 - Network metrics
 ```
 
 # Output Structure
@@ -208,21 +208,21 @@ webrecon_output/graphs/
 
 ```
 webrecon_output/
-├── comprehensive_report_TIMESTAMP.json       # Complete JSON data
-├── comprehensive_report_TIMESTAMP.html       # Interactive HTML report
-├── comprehensive_report_TIMESTAMP.txt        # Text summary
-├── images_DOMAIN_TIMESTAMP/                  # Downloaded images
-│   ├── raw/                                  # Original images
-│   ├── thumbnails/                           # Resized thumbnails
-│   ├── extracted/                            # Metadata and extracted data
-│   ├── gallery.html                          # Image gallery
-│   ├── metadata.json                         # Image metadata
-│   └── images_summary.csv                    # CSV summary
-├── graphs/                                   # Relationship graphs
+├── comprehensive_report_TIMESTAMP.json       - Complete JSON data
+├── comprehensive_report_TIMESTAMP.html       - Interactive HTML report
+├── comprehensive_report_TIMESTAMP.txt        - Text summary
+├── images_DOMAIN_TIMESTAMP/                  - Downloaded images
+│   ├── raw/                                  - Original images
+│   ├── thumbnails/                           - Resized thumbnails
+│   ├── extracted/                            - Metadata and extracted data
+│   ├── gallery.html                          - Image gallery
+│   ├── metadata.json                         - Image metadata
+│   └── images_summary.csv                    - CSV summary
+├── graphs/                                   - Relationship graphs
 │   ├── relationship_graph_DOMAIN_TIMESTAMP.html
 │   ├── graph_data_DOMAIN_TIMESTAMP.json
 │   └── graph_analysis_report.txt
-└── webrecon_DOMAIN_TIMESTAMP.json            # Legacy JSON format
+└── webrecon_DOMAIN_TIMESTAMP.json            - Legacy JSON format
 ```
 
 # Installation
