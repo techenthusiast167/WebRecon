@@ -303,17 +303,6 @@ webrecon_output/
 
 # Feature Control
 
-### Disable specific modules
-
-    python3 WebRecon.py https://example.com \
-
-  --no-images \          # Disable image downloading
-  --no-graphs \          # Disable relationship graphs
-  --no-dns \            # Disable DNS reconnaissance
-  --no-whois \          # Disable WHOIS lookup
-  --no-wayback \        # Disable Wayback Machine
-  --no-builtwith \      # Disable BuiltWith analysis
-  --no-dnsdumpster      # Disable DNSDumpster
 
 ### Table-only output mode
 
